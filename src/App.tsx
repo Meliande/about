@@ -30,32 +30,11 @@ function App() {
         <ScrollPage>
           <div className="flex flex-row justify-center">
             <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-              <div className="w-screen px-24 grid grid-cols-2 gap-5">
-                <div className="snap-mandatory scroll-smooth snap-x flex flex-row overflow-x-auto gap-1">
-                  <img className="bg-slate-300 p-5 snap-center shadow-2xl" src="public/datasci.jpg" alt="" />
-                  <img className="snap-center" src="public/datasci.jpg" alt="" />
+                <div id="">
+                  <img src="public/datasci.jpg" alt="" />
                 </div>
-                <div className="break-all">
-                  <p>
-                    
-                  </p>
-                </div>
-              </div>
-            </Animator>
-            <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
-          </div>
-          </ScrollPage>
-        <ScrollPage>
-          <div className="flex flex-row justify-center">
-            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-              <div className="w-screen px-24 grid grid-cols-2 gap-5">
-                <div className="snap-mandatory snap-x flex flex-row overflow-x-auto gap-1">
-                  <img className="snap-center" src="public/datasci.jpg" alt="" />
-                  <img className="snap-center" src="public/datasci.jpg" alt="" />
-                </div>
-              </div>
-            </Animator>
-            <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
+              </Animator>
+              <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
           </div>
           </ScrollPage>
         </ScrollContainer>
