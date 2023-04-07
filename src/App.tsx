@@ -8,7 +8,7 @@ import {
   MoveOut, 
   Sticky, 
  } from "react-scroll-motion";
- import { ArrowDown } from "@phosphor-icons/react";
+ import { ArrowDown, HeartStraight } from "@phosphor-icons/react";
 
 function App() {
 
@@ -19,47 +19,49 @@ function App() {
         <ScrollContainer className="">
         <ScrollPage>
           <div className="flex flex-row justify-center">
-            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-                <div id="teste2">
+            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+                <div id="">
                   <div>aaaaa</div>
                 </div>
               </Animator>
-              <ArrowDown size={60} className="animate-bounce absolute bottom-0" />
+              <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
           </div>
           </ScrollPage>
         <ScrollPage>
           <div className="flex flex-row justify-center">
-            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-                <div id="teste2">
-                  <div>bbbbb</div>
+            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+              <div className="w-screen px-24 grid grid-cols-2 gap-5">
+                <div className="snap-mandatory scroll-smooth snap-x flex flex-row overflow-x-auto gap-1">
+                  <img className="bg-slate-300 p-5 snap-center shadow-2xl" src="public/datasci.jpg" alt="" />
+                  <img className="snap-center" src="public/datasci.jpg" alt="" />
                 </div>
-              </Animator>
-              <ArrowDown size={60} className="animate-bounce absolute bottom-0" />
+                <div className="break-all">
+                  <p>
+                    
+                  </p>
+                </div>
+              </div>
+            </Animator>
+            <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
           </div>
           </ScrollPage>
         <ScrollPage>
           <div className="flex flex-row justify-center">
-            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-                <div id="teste2">
-                  <div>ccccc</div>
+            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+              <div className="w-screen px-24 grid grid-cols-2 gap-5">
+                <div className="snap-mandatory snap-x flex flex-row overflow-x-auto gap-1">
+                  <img className="snap-center" src="public/datasci.jpg" alt="" />
+                  <img className="snap-center" src="public/datasci.jpg" alt="" />
                 </div>
-              </Animator>
-              <ArrowDown size={60} className="animate-bounce absolute bottom-0" />
-          </div>
-          </ScrollPage>
-        <ScrollPage>
-          <div className="flex flex-row justify-center">
-            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-                <div id="teste2">
-                  <div>ddddd</div>
-                </div>
-              </Animator>
+              </div>
+            </Animator>
+            <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
           </div>
           </ScrollPage>
         </ScrollContainer>
         <div
           className="flex flex-row justify-center font-bold">
-            Made by Rodrigo Meliande with Vite + TailwindCSS
+            Made by Rodrigo Meliande with React + Tailwind
         </div>
     </div>
   )
