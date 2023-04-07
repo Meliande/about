@@ -31,7 +31,7 @@ function App() {
           <div className="flex flex-row justify-center">
             <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
                 <div id="">
-                  <img src="public/datasci.jpg" alt="" />
+                  <img src="public/assets/img/datasci.jpg" alt="" />
                 </div>
               </Animator>
               <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
