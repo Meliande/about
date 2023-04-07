@@ -9,6 +9,7 @@ import {
   Sticky, 
  } from "react-scroll-motion";
  import { ArrowDown, HeartStraight } from "@phosphor-icons/react";
+ import img from "/public/assets/img/datasci.jpg"
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
           <div className="flex flex-row justify-center">
             <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
                 <div id="">
-                  <img src="public/assets/img/datasci.jpg" alt="" />
+                  <img src={img} alt="" />
                 </div>
               </Animator>
               <ArrowDown size={30} className="animate-bounce absolute bottom-0" />
